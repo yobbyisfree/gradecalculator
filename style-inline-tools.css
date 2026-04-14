@@ -1,0 +1,275 @@
+.overview-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.95fr) minmax(260px, 0.62fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.overview-column {
+  min-width: 0;
+}
+
+.overview-column--left {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.overview-column--right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%;
+}
+
+.panel--planner-intro {
+  padding: 12px 14px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.panel--planner-intro .panel__header {
+  margin-bottom: 0;
+}
+
+.panel--planner-intro .panel__eyebrow {
+  font-size: 0.72rem;
+}
+
+.panel--planner-intro h2 {
+  font-size: 1.08rem;
+  line-height: 1.15;
+}
+
+.overview-column--left .planner-panel {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: var(--shadow);
+}
+
+.overview-column--right .dashboard__chart,
+.overview-column--right .dashboard__stats {
+  padding: 14px 14px 12px;
+}
+
+.overview-column--right .dashboard__stats {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
+  grid-template-areas:
+    "header header"
+    "summary progress";
+  column-gap: 10px;
+  align-content: start;
+}
+
+.overview-column--right .dashboard__chart .panel__header,
+.overview-column--right .dashboard__stats .panel__header {
+  margin-bottom: 8px;
+}
+
+.overview-column--right .dashboard__stats > .panel__header {
+  grid-area: header;
+}
+
+.overview-column--right .dashboard__chart .panel__eyebrow,
+.overview-column--right .dashboard__stats .panel__eyebrow {
+  font-size: 0.64rem;
+}
+
+.overview-column--right .dashboard__chart h2,
+.overview-column--right .dashboard__stats h2 {
+  font-size: 0.9rem;
+  line-height: 1.08;
+}
+
+.overview-column--right .legend {
+  gap: 8px;
+  font-size: 0.72rem;
+}
+
+.overview-column--right .legend__dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+}
+
+.overview-column--right #gpaChart {
+  border-radius: 16px;
+}
+
+.overview-column--right .summary-grid {
+  grid-area: summary;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  align-content: start;
+}
+
+.overview-column--right .summary-card {
+  padding: 8px 10px;
+  border-radius: 12px;
+  min-height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overview-column--right .summary-card span {
+  font-size: 0.62rem;
+}
+
+.overview-column--right .summary-card strong {
+  margin-top: 4px;
+  font-size: 1.08rem;
+}
+
+.overview-column--right .progress-list {
+  grid-area: progress;
+  gap: 6px;
+  margin-top: 0;
+  display: grid;
+  align-content: start;
+}
+
+.overview-column--right .progress-item {
+  padding: 8px 10px;
+  border-radius: 12px;
+  min-height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overview-column--right .progress-item__head {
+  margin-bottom: 5px;
+  font-size: 0.62rem;
+}
+
+.overview-column--right .progress-track {
+  height: 6px;
+}
+
+.overview-column--left .planner-grid {
+  padding: 10px 4px 8px;
+}
+
+.overview-column--left .planner-table {
+  min-width: 1240px;
+}
+
+.overview-column--left .planner-header,
+.overview-column--left .planner-row,
+.overview-column--left .planner-footer {
+  grid-template-columns: 132px repeat(var(--term-count), minmax(104px, 1fr));
+  gap: 6px;
+}
+
+.overview-column--left .planner-header {
+  margin-bottom: 6px;
+}
+
+.overview-column--left .corner-card,
+.overview-column--left .category-label,
+.overview-column--left .footer-card {
+  padding: 7px 8px;
+}
+
+.overview-column--left .corner-card h2,
+.overview-column--left .category-label h3,
+.overview-column--left .footer-card strong {
+  font-size: 0.78rem;
+}
+
+.overview-column--left .corner-card p,
+.overview-column--left .category-meta,
+.overview-column--left .footer-card span {
+  font-size: 0.58rem;
+  line-height: 1.15;
+}
+
+.overview-column--left .term-chip {
+  min-height: 28px;
+  font-size: 0.62rem;
+  padding: 4px 2px;
+}
+
+.overview-column--left .term-cell {
+  gap: 4px;
+  min-height: 64px;
+  padding: 4px;
+}
+
+.overview-column--left .course-card {
+  padding: 5px 6px;
+}
+
+.overview-column--left .course-card__top strong {
+  font-size: 0.6rem;
+  line-height: 1.1;
+}
+
+.overview-column--left .course-card__meta {
+  margin-top: 3px;
+  font-size: 0.52rem;
+  gap: 4px;
+}
+
+.overview-column--left .badge {
+  padding: 1px 4px;
+  font-size: 0.48rem;
+}
+
+.overview-column--left .add-card {
+  padding: 5px 6px;
+  font-size: 0.54rem;
+}
+
+.overview-column--left .pill {
+  padding: 3px 6px;
+  font-size: 0.56rem;
+}
+
+.overview-column--left .planner-row {
+  padding: 14px 0;
+}
+
+.overview-column--left .planner-row .term-cell,
+.overview-column--left .planner-row .category-label {
+  min-height: 132px;
+}
+
+.overview-column--left .planner-footer {
+  margin-top: 6px;
+  padding-top: 10px;
+}
+
+@media (max-width: 1380px) {
+  .overview-layout {
+    grid-template-columns: minmax(0, 1.7fr) minmax(240px, 0.72fr);
+  }
+}
+
+@media (max-width: 980px) {
+  .overview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-column--left,
+  .overview-column--right {
+    gap: 14px;
+  }
+
+  .overview-column--right .dashboard__stats {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "summary"
+      "progress";
+  }
+
+  .panel--planner-intro,
+  .overview-column--left .planner-panel {
+    border-radius: 22px;
+  }
+}
