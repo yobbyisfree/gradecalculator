@@ -1,4 +1,4 @@
-﻿const STORAGE_KEY = "graduation-planner-clone-v3";
+﻿const STORAGE_KEY = "graduation-planner-clone-v4";
 const THEME_KEY = "graduation-planner-theme";
 
 const UI = {
@@ -77,7 +77,6 @@ const sampleData = {
       courses: {
         "군복무": [
           makeCourse("한국의젊은시인들", 3, "P", "군복", { memo: "문학과예술" }),
-          makeCourse("데이터학습과지능(영강)", 3, "P", "군복", { major: true, english: true, memo: "전공선택" }),
         ],
       },
     },
@@ -89,34 +88,15 @@ const sampleData = {
       courses: {
         "19-1": [
           makeCourse("일반화학및연습Ⅰ", 3, "C", "전관교"),
-          makeCourse("일반화학실험Ⅰ", 1, "C+", "전관교"),
-          makeCourse("1학년세미나Ⅰ", 1, "P", "세미나"),
-          makeCourse("자유정의진리Ⅰ", 3, "B+", "자정진"),
-          makeCourse("글쓰기", 2, "B", "글쓰기"),
-          makeCourse("ACADEMIC ENGLISHⅠ(영강)", 1, "F", "영교", { english: true, retake: true, retakeKey: "academic-english-1" }),
-          makeCourse("미적분학및연습I", 3, "F", "전관교"),
-          makeCourse("일반물리학및연습Ⅰ", 3, "F", "전관교", { retake: true, retakeKey: "phys1" }),
-          makeCourse("일반물리학실험Ⅰ", 1, "B", "전관교"),
         ],
         "19-2": [
           makeCourse("경제학개론", 3, "C+", "선교"),
-          makeCourse("컴퓨터언어및실습", 3, "A", "전관교"),
-          makeCourse("정보적사고", 1, "P", "정보"),
-          makeCourse("1학년세미나 II", 1, "P", "세미나"),
-          makeCourse("자유정의진리II", 3, "B+", "자정진"),
-          makeCourse("ACADEMIC ENGLISHⅠ(영강)", 1, "B+", "영교", { english: true, retake: true, retakeKey: "academic-english-1" }),
-          makeCourse("미적분학및연습II", 3, "D+", "전관교", { retake: true, retakeKey: "calc2" }),
-          makeCourse("일반물리학및연습Ⅱ", 3, "D", "전관교"),
-          makeCourse("일반물리학실험Ⅱ", 1, "B+", "전관교"),
         ],
         "20-1": [
           makeCourse("감정과삶", 3, "C+", "윤리"),
-          makeCourse("환경문명사", 3, "A+", "역사"),
-          makeCourse("일반물리학및연습Ⅰ", 3, "B+", "전관교", { retake: true, retakeKey: "phys1" }),
         ],
         "21-1": [
           makeCourse("발명과창업", 3, "A", "과기"),
-          makeCourse("현대사회의윤리적쟁점들", 3, "A+", "선교"),
         ],
         "23-여름": [
           makeCourse("미적분학및연습II", 3, "C+", "기초과학", { retake: true, retakeKey: "calc2" }),
@@ -134,22 +114,15 @@ const sampleData = {
       courses: {
         "20-1": [
           makeCourse("전기회로실험", 1, "B", "전필", { major: true }),
-          makeCourse("디지털시스템(영강)", 3, "A+", "전필", { major: true, english: true }),
-          makeCourse("공학수학Ⅰ(영강)", 3, "C", "전필", { major: true, english: true, retake: true, retakeKey: "engmath1" }),
         ],
         "21-1": [
           makeCourse("전기회로Ⅰ(영강)", 3, "B", "전필", { major: true, english: true }),
-          makeCourse("공학수학Ⅰ(영강)", 3, "C", "전필", { major: true, english: true, retake: true, retakeKey: "engmath1", memo: "재수강" }),
         ],
         "23-2": [
           makeCourse("전자기학", 3, "D+", "전필", { major: true }),
-          makeCourse("디지털시스템실험", 1, "C", "전필", { major: true }),
-          makeCourse("공학수학Ⅱ(영강)", 3, "C+", "전필", { major: true, english: true }),
         ],
         "25-1": [
           makeCourse("전자회로I(영강)", 3, "B", "전필", { major: true, english: true }),
-          makeCourse("전자회로설계및실험I", 1, "B", "전필", { major: true }),
-          makeCourse("신호와시스템", 3, "C+", "전필", { major: true }),
         ],
         "25-2": [
           makeCourse("전공소개세미나", 1, "P", "전필", { major: true }),
@@ -164,20 +137,15 @@ const sampleData = {
       courses: {
         "21-1": [
           makeCourse("데이터과학기초(영강)", 3, "A", "전선", { major: true, english: true }),
-          makeCourse("확률및랜덤프로세스(영강)", 3, "B", "전선", { major: true, english: true }),
         ],
         "23-2": [
           makeCourse("데이터구조및알고리즘", 3, "C+", "전선", { major: true }),
-          makeCourse("물성전자공학(영강)", 3, "C+", "전선", { major: true, english: true }),
         ],
         "25-1": [
           makeCourse("반도체공학Ⅰ(영강)", 3, "B", "전선", { major: true, english: true }),
-          makeCourse("전기전자공학도를위한기계학습과지능(영강)", 3, "C+", "전선", { major: true, english: true }),
         ],
         "25-2": [
           makeCourse("반도체공학Ⅱ(영강)", 3, "B+", "전선", { major: true, english: true }),
-          makeCourse("전기기기Ⅰ(영강)", 3, "C+", "전선", { major: true, english: true }),
-          makeCourse("디지털신호처리", 3, "C", "전선", { major: true }),
         ],
       },
     },
